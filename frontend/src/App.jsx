@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CreateImage from "./pages/CreateImage";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -13,6 +13,7 @@ function App() {
         <Route path="/create" element={<CreateImage />} />
         <Route />
       </Routes>
+      <Footer />
     </>
   );
 }

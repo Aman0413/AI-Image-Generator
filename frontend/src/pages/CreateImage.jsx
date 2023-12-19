@@ -28,7 +28,7 @@ function CreateImage() {
   };
 
   return (
-    <div className="mt-24  w-full flex justify-center items-center">
+    <div className="my-24  w-full flex justify-center items-center">
       <div className="w-[90%] ">
         <h2 className="font-bold text-3xl mt-10 text-text-primary">
           Covert your words to images for free.
