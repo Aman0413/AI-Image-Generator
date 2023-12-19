@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/image0_0 (1).jpg";
 import img2 from "../assets/image1_0.jpg";
+import Title from "react-vanilla-tilt";
+import VanillaTilt from "vanilla-tilt";
 
 function HeroSection() {
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll(".tilt-image"), {
+      max: 40,
+      speed: 600,
+      glare: true,
+    });
+  }, []);
   return (
     <div className="w-full  flex justify-center items-center mt-24 ">
       <div className=" w-[90%] flex justify-between items-center">
@@ -28,8 +37,12 @@ function HeroSection() {
         </div>
         <div className=" w-[50%] flex justify-center items-center py-4 ">
           <div className="relative">
-            <img src={img1} alt="" className="w-72 rounded-lg ml-72 " />
-            <img src={img2} alt="" className="w-72  rounded-lg" />
+            <img
+              src={img1}
+              alt=""
+              className="w-72 rounded-lg ml-72 tilt-image "
+            />
+            <img src={img2} alt="" className="w-72  rounded-lg tilt-image" />
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ function Home() {
             <img
               src={img}
               alt=""
-              className="w-[65%] rounded-lg relative shadow-lg"
+              className="w-[65%] rounded-lg relative shadow-lg transform transition-transform duration-300 ease-in-out hover:rotate-6"
             />
           </div>
           <div className="w-[60%] p-4  flex flex-col gap-4 justify-center ">
